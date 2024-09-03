@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>БОБЁР Кафе-Бар 🔆 | Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Stylesheet -->
+    <link
+      href="assets/vendor/magnific-popup/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-select/css/bootstrap-select.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendor/rangeslider/rangeslider.css" />
+    <link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendor/switcher/switcher.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="bg">
+    <div class="page-wraper">
+      <header class="site-header mo-left header header-transparent style-1">
+        <!-- Main Header -->
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
+          <div class="main-bar clearfix">
+            <div class="container clearfix">
+              <!-- Website Logo -->
+              <div class="logo-header mostion">
+                <a href="index.html" class="anim-logo">
+                  <img src="assets/images/logo.png" alt="/" />
+                </a>
+                <a href="index.html" class="anim-logo-white">
+                  <img src="assets/images/logo2.png" alt="/" />
+                </a>
+              </div>
+
+              <!-- Nav Toggle Button -->
+              <button
+                class="navbar-toggler collapsed navicon justify-content-end"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+
+              <!-- EXTRA NAV -->
+              <div class="extra-nav">
+                <div class="extra-cell">
+                  <ul>
+                    <li>
+                      <a
+                        class="btn btn-white btn-square btn-shadow"
+                        data-bs-toggle="offcanvas"
+                        href="#offcanvasLogin"
+                        role="button"
+                        aria-controls="offcanvasLogin"
+                      >
+                        <i class="flaticon-user"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-white btn-square btn-shadow cart-btn"
+                      >
+                        <i class="flaticon-shopping-bag-1"></i>
+                        <span class="badge">0</span>
+                      </button>
+                      <ul class="dropdown-menu cart-list">
+                        <!-- Cart items will be dynamically inserted here by cart.js -->
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- EXTRA NAV -->
+            </div>
+          </div>
+        </div>
+        <!-- Main Header End -->
+      </header>
+      <div class="page-content bg-white">
+        <!-- Banner  -->
+        <div
+          class="dz-bnr-inr style-1 text-center bg-parallax"
+          style="
+            background-image: url('assets/images/banner/bnr2.jpg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="container">
+            <div class="dz-bnr-inr-entry">
+              <h1>Shop</h1>
+              <nav aria-label="breadcrumb" class="breadcrumb-row">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Shop
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- Banner End -->
+
+        <!-- Cart Section -->
+        <section class="content-inner-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <!-- Dynamic Product List -->
+                <ul id="product-list" class="row">
+                  <!-- Products will be dynamically generated here -->
+                </ul>
+              </div>
+
+              <div class="col-lg-4">
+                <aside class="side-bar sticky-top">
+                  <div class="shop-filter style-1">
+                    <div class="d-flex justify-content-between">
+                      <div class="widget-title">
+                        <h5 class="title m-b30">
+                          Cart
+                          <span class="text-primary" id="cart-count">(0)</span>
+                        </h5>
+                      </div>
+                      <a href="javascript:void(0);" class="panel-close-btn"
+                        ><i class="fa-solid fa-xmark"></i
+                      ></a>
+                    </div>
+                    <!-- Cart Items Section -->
+                    <div id="cart-items" class="cart-items">
+                      <!-- Cart items will be dynamically inserted here -->
+                    </div>
+                    <!-- Bill Details -->
+                    <div class="order-detail">
+                      <h6>Bill Details</h6>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>Item Total</td>
+                            <td class="price text-primary" id="item-total">
+                              ₽ 0.00
+                            </td>
+                          </tr>
+                          <tr class="charges">
+                            <td>Delivery Charges</td>
+                            <td class="price text-primary">₽ 5.00</td>
+                          </tr>
+                          <tr class="tax">
+                            <td>Govt Taxes & Other Charges</td>
+                            <td class="price text-primary">₽ 3.50</td>
+                          </tr>
+                          <tr class="total">
+                            <td><h6>Total</h6></td>
+                            <td class="price text-primary" id="cart-total">
+                              ₽ 8.50
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a
+                        href="shop-checkout.html"
+                        class="btn btn-primary d-block text-center btn-md w-100 btn-hover-1"
+                      >
+                        <span
+                          >Order Now <i class="fa-solid fa-arrow-right"></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cart Section End -->
+
+     
+        <section class="content-inner-1">
+          <div class="container">
+            <!-- Search Wrapper -->
+            <div class="row search-wraper text-center">
+              <div class="col-lg-8 m-auto">
+                <form id="search-form">
+                  <div class="input-group">
+                    <input
+                      required="required"
+                      type="text"
+                      class="form-control"
+                      id="search-input"
+                      placeholder="Type here"
+                    />
+                    <div class="input-group-addon">
+                      <button
+                        name="submit"
+                        value="submit"
+                        type="submit"
+                        class="btn btn-primary btn-hover-2"
+                      >
+                        <span>Search</span><i class="icon-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Sidebar for Filters -->
+              <div class="col-lg-3">
+                <aside class="side-bar left sticky-top">
+                  <div class="shop-filter">
+                    <!-- Category Filter -->
+                    <div class="widget dz-widget_services">
+                      <div class="widget-title">
+                        <h4 class="title">Refine By Categories</h4>
+                      </div>
+                      <div id="category-filters"></div>
+                    </div>
+
+                    <!-- Price Range Filter -->
+                    <div class="widget">
+                      <div class="widget-title">
+                        <h4 class="title">Price Range</h4>
+                      </div>
+                      <div class="range-slider style-1">
+                        <div id="slider-tooltips"></div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+
+              <!-- Main Content Area for Products -->
+              <div class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="title mb-md-3 mb-lg-4 m-b20 d-none d-lg-block">
+                    Search Results
+                  </h5>
+                  <strong
+                    class="filter-item-show m-b20"
+                    id="total-items"
+                  ></strong>
+                  <a
+                    href="javascript:void(0);"
+                    class="btn btn-primary panel-btn"
+                    >Filter</a
+                  >
+                </div>
+
+                <!-- Product Listing -->
+                <ul id="masonry" class="row"></ul>
+
+                <!-- Pagination Controls -->
+                <div class="pagination-controls">
+                  <ul class="pagination"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--Footer-->
+      <!-- Include your footer here -->
+      <!--Footer-->
+
+      <div class="scroltop-progress scroltop-primary">
+        <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT FILES ========================================= -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="assets/vendor/masonry/masonry-4.2.2.js"></script>
+    <script src="assets/vendor/masonry/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.js"></script>
+    <script src="assets/vendor/counter/waypoints-min.js"></script>
+    <script src="assets/vendor/bootstrap-touchspin/bootstrap-touchspin.js"></script>
+    <script src="assets/vendor/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendor/wnumb/wNumb.js"></script>
+    <script src="assets/js/dz.ajax.js"></script>
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/dznav-init.js"></script>
+    <script src="assets/vendor/rangeslider/rangeslider.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script src="shopping.js" type="module"></script>
+    <script src="cart.js" type="module"></script>
+  </body>
+</html>
